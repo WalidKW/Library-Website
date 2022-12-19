@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Resturant.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style3 {
+            width: 402px;
+            height: 24px;
+        }
+        .auto-style4 {
+            height: 24px;
+        }
+        .auto-style5 {
+            text-align: left;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style5" colspan="2">Signed in Successfully in
+                        <asp:Label ID="LabelUser" runat="server"></asp:Label>
+&nbsp;to Sign out
+                        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Sign out" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">
+                        <asp:MultiView ID="MultiViewControl" runat="server">
+                            <asp:View ID="ViewAdmin" runat="server">
+                                <strong>Admin View</strong>
+                            </asp:View>
+                            <asp:View ID="ViewUser" runat="server">
+                                <strong>User View</strong>
+                            </asp:View>
+                        </asp:MultiView>
+                    </td>
+                    <td class="auto-style4">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

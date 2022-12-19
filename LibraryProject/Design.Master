@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Design.Master.cs" Inherits="Resturant.master" %>
+
+<!DOCTYPE html>
+
+<html>
+    <style>
+      body {
+        padding: 25px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+      }
+    </style>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            text-align: center;
+        }
+        .auto-style3 {
+            text-align: left;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="Master.css" />
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2"><h1>Artificial Intelligence library</h1></td>
+                </tr>
+                <tr >
+                    <td>
+                        <nav>
+                            <ul id="dd">
+                                <a href="main.aspx"><li class="auto-style3">Home</li></a>
+                                <a href="Search.aspx"><li>Search</li></a>
+                                <a href="AboutUs.aspx"><li>About Us</li></a>
+                                <a href="Admin\login.aspx"><li>Login</li></a>
+                                
+                            </ul>
+                        </nav>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                            <p>© 2022 Walid Alsafadi & Fares Alnamla, Inc.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
