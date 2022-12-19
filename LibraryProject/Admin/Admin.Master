@@ -39,7 +39,8 @@
                     <td class="auto-style3">
                         <asp:MultiView ID="MultiViewControl" runat="server">
                             <asp:View ID="ViewAdmin" runat="server">
-                                <strong>Admin View</strong>
+                                <strong>Admin Controls:<br /> </strong>
+                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Admin/AddBook.aspx">Add Book</asp:HyperLink>
                             </asp:View>
                             <asp:View ID="ViewUser" runat="server">
                                 <strong>User View</strong>
