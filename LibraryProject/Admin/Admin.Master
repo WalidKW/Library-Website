@@ -4,6 +4,7 @@
 
 <html>
 <head runat="server">
+    <link rel="stylesheet" type="text/css" href="AdminStyle.css" />
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -29,10 +30,11 @@
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style5" colspan="2">Signed in Successfully in
+                    <td class="auto-style5" colspan="2"><h4>Signed in Successfully in
                         <asp:Label ID="LabelUser" runat="server"></asp:Label>
 &nbsp;to Sign out
                         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Sign out" />
+                        </h4>
                     </td>
                 </tr>
                 <tr>
@@ -41,9 +43,11 @@
                             <asp:View ID="ViewAdmin" runat="server">
                                 <strong>Admin Controls:<br /> </strong>
                                 <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Admin/AddBook.aspx">Add Book</asp:HyperLink>
+                                <br />
+                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Admin/EditBooks.aspx">Edit or Delete Books</asp:HyperLink>
                             </asp:View>
                             <asp:View ID="ViewUser" runat="server">
-                                <strong>User View</strong>
+                                <strong>User View<br /> <a href="../main.aspx">Home</a><br /> <a href="../Search.aspx">Search</a><br /> <a href="../AboutUs.aspx">About Us</a></strong>
                             </asp:View>
                         </asp:MultiView>
                     </td>

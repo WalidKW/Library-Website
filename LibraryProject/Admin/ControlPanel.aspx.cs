@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Resturant.Admin
+namespace LibraryProject.Admin
 {
     public partial class ControlPanel : System.Web.UI.Page
     {

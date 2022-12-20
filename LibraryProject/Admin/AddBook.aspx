@@ -50,7 +50,7 @@
                 Add:</td>
             <td>
 
-                <asp:Button ID="ButtonAdd" runat="server" OnClick="ButtonAdd_Click" Text="Add" />
+                <asp:Button ID="ButtonAdd" runat="server" OnClick="ButtonAdd_Click" Text="Add" Height="40px" Width="87px" />
                 <asp:SqlDataSource ID="SqlDataSourceAdd" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Books]"></asp:SqlDataSource>
 
             </td>

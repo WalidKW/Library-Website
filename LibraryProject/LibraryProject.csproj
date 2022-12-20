@@ -70,8 +70,10 @@
   <ItemGroup>
     <Content Include="AboutUs.aspx" />
     <Content Include="Admin\ControlPanel.aspx" />
+    <Content Include="Admin\EditBooks.aspx" />
     <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\AddBook.aspx" />
+    <Content Include="Admin\AdminStyle.css" />
     <Content Include="App_Data\Database.mdf" />
     <Content Include="App_Data\Database_log.ldf">
       <DependentUpon>Database.mdf</DependentUpon>
@@ -121,6 +123,13 @@
     </Compile>
     <Compile Include="Admin\ControlPanel.aspx.designer.cs">
       <DependentUpon>ControlPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditBooks.aspx.cs">
+      <DependentUpon>EditBooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditBooks.aspx.designer.cs">
+      <DependentUpon>EditBooks.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

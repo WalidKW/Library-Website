@@ -8,7 +8,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace Resturant.Admin
+namespace LibraryProject.Admin
 {
     public partial class ControlPanel
     {
