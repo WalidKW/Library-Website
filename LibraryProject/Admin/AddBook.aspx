@@ -41,7 +41,6 @@
             <td class="auto-style9">
                 <asp:FileUpload ID="FileUpload1" runat="server" />
                 <br />
-                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
             </td>
         </tr>
         <tr>
